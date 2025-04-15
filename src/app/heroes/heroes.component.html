@@ -1,0 +1,13 @@
+<section class="heroes-section">
+  <h2>All Champions</h2>
+  <div class="heroes-list">
+    <div *ngFor="let hero of heroes" class="hero-list-card">
+      <div class="hero-list-avatar">{{ hero.name.charAt(0) }}</div>
+      <div class="hero-list-details">
+        <span class="hero-list-id">#{{ hero.id }}</span>
+        <span class="hero-list-name">{{ hero.name }}</span>
+      </div>
+      <a class="hero-list-link" routerLink="/detail/{{ hero.id }}">View</a>
+    </div>
+  </div>
+</section>

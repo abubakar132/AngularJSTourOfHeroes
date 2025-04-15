@@ -1,0 +1,12 @@
+<header class="main-header">
+  <img src="assets/hero-logo.svg" alt="Hero Logo" class="logo" />
+  <h1>{{ title }}</h1>
+</header>
+<nav class="main-nav">
+  <a routerLink="/dashboard" routerLinkActive="active-link">Home</a>
+  <a routerLink="/heroes" routerLinkActive="active-link">All Champions</a>
+</nav>
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
+<app-messages></app-messages>

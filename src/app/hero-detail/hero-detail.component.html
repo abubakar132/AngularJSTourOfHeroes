@@ -1,0 +1,15 @@
+<div *ngIf="hero" class="hero-detail-card">
+  <div class="hero-detail-avatar">{{ hero.name.charAt(0) }}</div>
+  <div class="hero-detail-content">
+    <h2>{{ hero.name }}</h2>
+    <div class="hero-detail-id">ID: {{ hero.id }}</div>
+    <form>
+      <label for="heroName">Champion Name</label>
+      <input id="heroName" [(ngModel)]="hero.name" name="name" placeholder="Enter name" />
+    </form>
+    <div class="hero-detail-actions">
+      <button (click)="goBack()">Back</button>
+      <button class="save-btn" type="button">Save</button>
+    </div>
+  </div>
+</div>

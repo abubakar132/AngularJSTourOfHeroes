@@ -1,0 +1,90 @@
+/* MessagesComponent's private CSS styles */
+h2 {
+    color: #A80000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  
+  .clear {
+    color: #333;
+    background-color: #eee;
+    margin-bottom: 12px;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  .clear:hover {
+    color: white;
+    background-color: #42545C;
+  }
+
+.messages-panel {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(25, 118, 210, 0.13);
+  min-width: 260px;
+  max-width: 340px;
+  z-index: 1000;
+  padding: 0.7rem 1.1rem 1rem 1.1rem;
+}
+
+.messages-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 600;
+  color: #1976d2;
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+}
+
+.messages-icon {
+  font-size: 1.3rem;
+}
+
+.clear-btn {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.clear-btn:hover {
+  background: #e3f2fd;
+  color: #d32f2f;
+}
+
+.messages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.messages-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #e3f2fd;
+  color: #333;
+  font-size: 1rem;
+}
+
+.messages-list li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 600px) {
+  .messages-panel {
+    position: static;
+    margin: 1rem auto 0 auto;
+    max-width: 98vw;
+    min-width: 0;
+    padding: 0.5rem 0.7rem 0.7rem 0.7rem;
+  }
+}

@@ -1,0 +1,156 @@
+:host {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e3f2fd;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+  color: #1976d2;
+  text-align: center;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0d47a1;
+}
+
+.hero-detail-card {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(25, 118, 210, 0.10);
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.hero-detail-avatar {
+  width: 70px;
+  height: 70px;
+  background: #1976d2;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.13);
+}
+
+.hero-detail-content {
+  flex: 1;
+}
+
+.hero-detail-content h2 {
+  margin: 0 0 0.5rem 0;
+  color: #1976d2;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.hero-detail-id {
+  color: #888;
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+
+form {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #1976d2;
+}
+
+input {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 7px;
+  border: 1px solid #b3c6e0;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  background: #f5faff;
+}
+
+.hero-detail-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  background: #1976d2;
+  color: #fff;
+  padding: 0.6rem 1.3rem;
+  border-radius: 7px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #0d47a1;
+}
+
+.save-btn {
+  background: #43a047;
+}
+
+.save-btn:hover {
+  background: #2e7031;
+}
+
+@media (max-width: 600px) {
+  .hero-detail-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .hero-detail-avatar {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+}

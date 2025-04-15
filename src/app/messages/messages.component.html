@@ -1,0 +1,10 @@
+<div *ngIf="messageService.messages.length" class="messages-panel">
+  <div class="messages-header">
+    <span class="messages-icon">&#128276;</span>
+    <span>Notifications</span>
+    <button class="clear-btn" (click)="messageService.clear()" title="Clear all">&#10006;</button>
+  </div>
+  <ul class="messages-list">
+    <li *ngFor="let message of messageService.messages">{{ message }}</li>
+  </ul>
+</div>
